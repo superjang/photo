@@ -31,3 +31,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.ACTIONS_API_KEY }}
           BUILD_DIR: 'public/'
+          COMMIT_ID: ${{ github.sha }}
+        run: echo "Commit ID => $COMMIT_ID"
